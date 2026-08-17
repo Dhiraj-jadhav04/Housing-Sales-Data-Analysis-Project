@@ -1,0 +1,15 @@
+select * from `project-8dd7ef5d-50a4-4cc9-8b1.1.Housing` LIMIT 1000;
+select distinct sqm from `project-8dd7ef5d-50a4-4cc9-8b1.1.Test`where no_rooms 
+
+CREATE TABLE `project-8dd7ef5d-50a4-4cc9-8b1.1.Test` as
+select * from `project-8dd7ef5d-50a4-4cc9-8b1.1.Housing`;
+
+select * from `project-8dd7ef5d-50a4-4cc9-8b1.1.Test` LIMIT 1000;
+
+Select sales_type, AVG(purchase_price) from `project-8dd7ef5d-50a4-4cc9-8b1.1.Test`
+Group BY sales_type
+
+UPDATE `project-8dd7ef5d-50a4-4cc9-8b1.1.Test` SET sqm = 100 where no_rooms = 3;
+
+
+SELECT  Distinct SQM from `project-8dd7ef5d-50a4-4cc9-8b1.1.Test` where no_rooms =3;
